@@ -17,11 +17,11 @@ The full app will be available soon, bringing additional features for farmers an
 
 ## 🛠️ Tech Stack
 - **Frontend:** HTML, CSS  
-- **Deployment:** Vercel
+- **Deployment:** Vercel  
 
 ---
 
 ## 🚀 Setup & Installation
 1. Clone the repository  
    ```bash
-   git clone https://github.com/Ardin14/pearl-agric-landing.git
+   git clone https://github.com/your-username/pearl-agric-landing.git
