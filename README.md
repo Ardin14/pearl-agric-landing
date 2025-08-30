@@ -27,22 +27,22 @@ Here’s a sneak peek of the full mobile app currently under development with **
 ### Screenshots
 
 **Welcome Screen**  
-![Welcome Screen](screenshots/upcoming-app/screenshot1.png)
+<img src="screenshots/upcoming-app/screenshot1.png" alt="Welcome Screen" width="300"/>
 
 **Signup Screen**  
-![Signup Screen](screenshots/upcoming-app/screenshot2.png)
+<img src="screenshots/upcoming-app/screenshot2.png" alt="Signup Screen" width="300"/>
 
 **Login Screen**  
-![Screenshot](screenshots/upcoming-app/screenshot3.PNG)
+<img src="screenshots/upcoming-app/screenshot3.PNG" alt="Login Screen" width="300"/>
 
 **Profile Screen**  
-![Profile Screen](screenshots/upcoming-app/screenshot4.jpg)
+<img src="screenshots/upcoming-app/screenshot4.jpg" alt="Profile Screen" width="300"/>
 
 **Home Screen**  
-![Home Screen](screenshots/upcoming-app/screenshot5.png)
+<img src="screenshots/upcoming-app/screenshot5.png" alt="Home Screen" width="300"/>
 
 **Comment Section**  
-![Comment Section](screenshots/upcoming-app/screenshot6.png)
+<img src="screenshots/upcoming-app/screenshot6.png" alt="Comment Section" width="300"/>
 
 
 ## 🚀 Setup & Installation
