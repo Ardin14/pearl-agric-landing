@@ -20,6 +20,30 @@ The full app will be available soon, bringing additional features for farmers an
 - **Deployment:** Vercel  
 
 ---
+## 📱 Upcoming PearlAgric App (Preview)
+
+Here’s a sneak peek of the full mobile app currently under development with **React Native and Supabase**.
+
+### Screenshots
+
+**Welcome Screen**  
+![Welcome Screen](screenshots/upcoming-app/screenshot1.png)
+
+**Signup Screen**  
+![Signup Screen](screenshots/upcoming-app/screenshot2.png)
+
+**Login Screen**  
+![Screenshot](screenshots/upcoming-app/screenshot3.PNG)
+
+**Profile Screen**  
+![Profile Screen](screenshots/upcoming-app/screenshot4.jpg)
+
+**Home Screen**  
+![Home Screen](screenshots/upcoming-app/screenshot5.png)
+
+**Comment Section**  
+![Comment Section](screenshots/upcoming-app/screenshot6.png)
+
 
 ## 🚀 Setup & Installation
 1. Clone the repository  
