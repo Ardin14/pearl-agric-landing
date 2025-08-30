@@ -1,5 +1,8 @@
 # 🌱 PearlAgric Landing Page
 
+## 🌐 Live Site
+[View Live Site]https://pearl-agric-landing.vercel.app/
+
 ## 📌 Overview
 PearlAgric is a platform that connects **farmers** with **investors**, enabling funding for agricultural projects.  
 
