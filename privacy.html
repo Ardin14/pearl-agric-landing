@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy | PearlAgric</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="legal.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="index.html"><img src="images/logo.png" alt="PearlAgric Logo" class="logo"/></a>
+      <nav>
+        <ul>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#screenshots">App Preview</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Content -->
+  <main class="legal-page">
+    <div class="legal-container">
+      <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Home</a>
+      <h1>Privacy Policy</h1>
+      <p class="legal-date">Last Updated: 12th August 2025</p>
+
+      <p class="legal-intro">
+        PearlAgric values your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our platform through our mobile application or website.
+      </p>
+
+      <section class="legal-section">
+        <h2>1. Information We Collect</h2>
+        <ul>
+          <li>Personal details (name, email, phone number, address, profile picture)</li>
+          <li>Financial information (bank account or mobile money details, only when provided by investors)</li>
+          <li>Usage data (login activity, project interactions, device information)</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>2. How We Use Your Information</h2>
+        <ul>
+          <li>To create and manage your account</li>
+          <li>To process investments and payments securely</li>
+          <li>To personalise your experience on the Platform</li>
+          <li>To communicate updates, project information, and support</li>
+          <li>To improve our services and security</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>3. Sharing of Information</h2>
+        <p>We do not sell your personal information. We may share your data only with:</p>
+        <ul>
+          <li>Service providers (e.g., Supabase for authentication, data hosting)</li>
+          <li>Payment processors for secure transactions</li>
+          <li>Legal authorities if required by law</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>4. Data Security</h2>
+        <p>We implement strong technical and organisational measures to protect your information. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>5. Your Rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the data we hold about you</li>
+          <li>Request corrections or updates</li>
+          <li>Request account deletion and data removal</li>
+          <li>Withdraw consent for data processing</li>
+        </ul>
+      </section>
+
+      <section class="legal-section">
+        <h2>6. Cookies &amp; Tracking</h2>
+        <p>PearlAgric may use cookies or similar technologies to enhance user experience, analyse trends, and improve platform performance.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify users of significant changes via email or in-app notifications.</p>
+      </section>
+
+      <section class="legal-section">
+        <h2>8. Contact Us</h2>
+        <p>If you have any privacy-related questions, please contact us at:</p>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-envelope"></i> <a href="mailto:privacy@pearlagric.com">privacy@pearlagric.com</a></li>
+          <li><i class="fa-solid fa-globe"></i> <a href="http://www.pearlagric.com">www.pearlagric.com</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="images/logo.png" alt="PearlAgric Logo" class="footer-logo"/>
+        <p>Connecting the Pearl of Africa to the World.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html#how-it-works">How It Works</a></li>
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#download">Download</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+      <div class="footer-links">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:support@pearlagric.com">support@pearlagric.com</a></li>
+          <li><a href="http://www.pearlagric.com">www.pearlagric.com</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 PearlAgric. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      const navbar = document.querySelector('.navbar');
+      let lastY = window.scrollY;
+      let ticking = false;
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            const currentY = window.scrollY;
+            if (currentY > lastY && currentY > 80) {
+              navbar.classList.add('hidden');
+            } else {
+              navbar.classList.remove('hidden');
+            }
+            lastY = currentY;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
+</body>
+</html>
