@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="styles.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 </head>
 <body>
 
@@ -99,32 +100,32 @@
       <p class="section-sub">Every feature is designed to build confidence between farmers and investors.</p>
       <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon">✅</div>
+          <div class="feature-icon"><i class="fa-solid fa-circle-check"></i></div>
           <h3>Farmer Verification</h3>
           <p>Farmers go through a verification process. Investors can filter to see only verified listings — giving confidence before committing funds.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📱</div>
+          <div class="feature-icon"><i class="fa-solid fa-mobile-screen"></i></div>
           <h3>Social-Style Feed</h3>
           <p>Browse projects like a feed — with photos, videos, rich descriptions, likes, and comments. Stay engaged with projects you care about.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🔔</div>
+          <div class="feature-icon"><i class="fa-solid fa-bell"></i></div>
           <h3>Real-Time Updates</h3>
           <p>Get instant notifications when a project you invested in posts an update, reaches a milestone, or logs a return payment.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">📊</div>
+          <div class="feature-icon"><i class="fa-solid fa-chart-simple"></i></div>
           <h3>Investor Dashboard</h3>
           <p>Track total invested, active projects, completed returns, and ROI — all in a clean, at-a-glance dashboard built for investors.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">💳</div>
+          <div class="feature-icon"><i class="fa-solid fa-money-bill-wave"></i></div>
           <h3>Mobile Money & Bank</h3>
           <p>Farmers link mobile money or bank accounts. Payments and payouts work the way Ugandans already do business.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon">🌍</div>
+          <div class="feature-icon"><i class="fa-solid fa-earth-africa"></i></div>
           <h3>Uganda-Wide Coverage</h3>
           <p>From Kampala to Karamoja — all 128 districts of Uganda are supported, with local phone numbers and familiar payment rails.</p>
         </div>
@@ -136,7 +137,7 @@
   <section class="audience-split section">
     <div class="container audience-grid">
       <div class="audience-card farmer">
-        <div class="audience-icon">🌾</div>
+        <div class="audience-icon"><i class="fa-solid fa-seedling"></i></div>
         <h3>For Farmers</h3>
         <ul>
           <li>Post your agricultural project and set your funding goal</li>
@@ -148,7 +149,7 @@
         <a href="#download" class="btn primary">Get Funded</a>
       </div>
       <div class="audience-card investor">
-        <div class="audience-icon">📈</div>
+        <div class="audience-icon"><i class="fa-solid fa-chart-line"></i></div>
         <h3>For Investors</h3>
         <ul>
           <li>Browse verified farming projects seeking investment</li>
@@ -232,5 +233,28 @@
     </div>
   </footer>
 
+  <script>
+    (function () {
+      const navbar = document.querySelector('.navbar');
+      let lastY = window.scrollY;
+      let ticking = false;
+
+      window.addEventListener('scroll', function () {
+        if (!ticking) {
+          window.requestAnimationFrame(function () {
+            const currentY = window.scrollY;
+            if (currentY > lastY && currentY > 80) {
+              navbar.classList.add('hidden');
+            } else {
+              navbar.classList.remove('hidden');
+            }
+            lastY = currentY;
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    })();
+  </script>
 </body>
 </html>
