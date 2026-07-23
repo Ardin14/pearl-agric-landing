@@ -26,14 +26,18 @@ a {
 
 /* Navbar */
 .navbar {
-  background: #fff;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: none;
   padding: 0.75rem 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 100;
   transform: translateY(0);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .navbar.hidden {
@@ -62,7 +66,7 @@ a {
 .nav-content a {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #494949;
+  color: #e5e5e5;
   transition: color 0.2s;
 }
 
@@ -74,7 +78,7 @@ a {
 .hero {
   background: linear-gradient(145deg, #003d22 0%, #006b3c 50%, #00C26F 100%);
   color: #fff;
-  padding: clamp(4rem, 12vw, 8rem) 2rem;
+  padding: clamp(6rem, 14vw, 10rem) 2rem clamp(4rem, 12vw, 8rem);
   text-align: center;
 }
 
@@ -527,9 +531,103 @@ a {
   }
 }
 
+/* Mobile Nav */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  color: #e5e5e5;
+  padding: 0.25rem 0.5rem;
+  line-height: 1;
+}
+
+.mobile-nav-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mobile-nav-overlay.open {
+  display: block;
+  opacity: 1;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: min(320px, 85vw);
+  background: #fff;
+  z-index: 201;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  box-shadow: -4px 0 24px rgba(0,0,0,0.1);
+}
+
+.mobile-nav.open {
+  transform: translateX(0);
+}
+
+.mobile-nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.4rem;
+  color: #494949;
+  padding: 0.25rem;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.nav-close:hover {
+  color: #00C26F;
+}
+
+.mobile-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mobile-nav ul li a {
+  display: block;
+  padding: 1rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1D1D1D;
+  border-bottom: 1px solid #f0f0f0;
+  transition: color 0.2s;
+}
+
+.mobile-nav ul li a:hover {
+  color: #00C26F;
+}
+
 @media (max-width: 600px) {
-  .nav-content nav {
+  .desktop-nav {
     display: none;
+  }
+
+  .nav-toggle {
+    display: block;
   }
 
   .footer-content {

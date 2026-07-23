@@ -16,7 +16,7 @@
   <header class="navbar">
     <div class="container nav-content">
       <a href="index.html"><img src="images/logo.png" alt="PearlAgric Logo" class="logo"/></a>
-      <nav>
+      <nav class="desktop-nav">
         <ul>
           <li><a href="index.html#how-it-works">How It Works</a></li>
           <li><a href="index.html#features">Features</a></li>
@@ -24,8 +24,26 @@
           <li><a href="index.html#download">Download</a></li>
         </ul>
       </nav>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
   </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav-overlay"></div>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <div class="mobile-nav-header">
+      <img src="images/logo.png" alt="PearlAgric Logo" class="logo"/>
+      <button class="nav-close" aria-label="Close menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <ul>
+      <li><a href="index.html#how-it-works">How It Works</a></li>
+      <li><a href="index.html#features">Features</a></li>
+      <li><a href="index.html#screenshots">App Preview</a></li>
+      <li><a href="index.html#download">Download</a></li>
+    </ul>
+  </nav>
 
   <!-- Content -->
   <main class="legal-page">
@@ -140,27 +158,6 @@
     </div>
   </footer>
 
-  <script>
-    (function () {
-      const navbar = document.querySelector('.navbar');
-      let lastY = window.scrollY;
-      let ticking = false;
-      window.addEventListener('scroll', function () {
-        if (!ticking) {
-          window.requestAnimationFrame(function () {
-            const currentY = window.scrollY;
-            if (currentY > lastY && currentY > 80) {
-              navbar.classList.add('hidden');
-            } else {
-              navbar.classList.remove('hidden');
-            }
-            lastY = currentY;
-            ticking = false;
-          });
-          ticking = true;
-        }
-      }, { passive: true });
-    })();
-  </script>
+  <script src="nav.js"></script>
 </body>
 </html>
